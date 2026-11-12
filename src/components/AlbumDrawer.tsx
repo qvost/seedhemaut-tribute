@@ -85,7 +85,7 @@ export function AlbumDrawer({ album, onClose, onAlbum }: AlbumDrawerProps) {
         transition={{ type: 'tween', duration: 0.4 }}
       >
         <div className="drawer-top">
-          <span>THE ARCHIVE / OPEN SLEEVE</span>
+          <span>TRACKLIST</span>
           <button ref={closeRef} onClick={onClose}>
             CLOSE ×
           </button>
@@ -192,7 +192,7 @@ export function AlbumDrawer({ album, onClose, onAlbum }: AlbumDrawerProps) {
         ))}
 
         {filtered.length === 0 && (
-          <p className="empty">NO SIGNAL. TRY ANOTHER TRACK.</p>
+          <p className="empty">NO TRACKS FOUND.</p>
         )}
 
         <a

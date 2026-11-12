@@ -8,15 +8,13 @@ export const duo = [
   {
     name: 'CALM',
     real: 'SIDDHANT SHARMA',
-    role: 'THE CADENCE. THE CONSOLE.',
-    text: 'A flow that never sits still. Calm bends syllables around the beat, then builds the beat himself. MC and producer, two sides of the same restless mind.',
+    text: 'Calm is an MC and producer from New Delhi.',
     tag: 'MC / PRODUCER · NEW DELHI',
   },
   {
     name: 'ENCORE ABJ',
     real: 'ABHIJAY NEGI',
-    role: 'THE PEN. THE PRESSURE.',
-    text: 'Battle-tested in Delhi’s cypher scene. Encore ABJ turns lived experience into vivid storytelling, cutting social observation and verses that stay with you.',
+    text: 'Encore ABJ is an MC and lyricist from New Delhi.',
     tag: 'MC / LYRICIST · NEW DELHI',
   },
 ];

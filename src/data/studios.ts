@@ -2,25 +2,25 @@ export const studios = [
   {
     name: 'SPIT DOPE INC.',
     type: 'THE CYPHER · COLLECTIVE',
-    note: 'Delhi’s battle-rap and cypher culture. The meeting ground before the movement.',
+    note: 'Delhi battle-rap and cypher collective.',
     era: 'THE ORIGINS',
   },
   {
     name: 'AZADI RECORDS',
     type: 'INDEPENDENT LABEL',
-    note: 'The early catalog. Bayaan, न and Lunch Break. A home for an uncompromising sound.',
+    note: 'Label for Bayaan, न and Lunch Break.',
     era: '2018 — 2023',
   },
   {
     name: 'SEZ ON THE BEAT',
     type: 'PRODUCER · SAJEEL KAPOOR',
-    note: 'The third voice in the room. The sonic architecture of Bayaan and Nayaab.',
+    note: 'Producer on Bayaan and Nayaab.',
     era: 'BAYAAN / NAYAAB',
   },
   {
     name: 'THE MVMNT',
     type: 'LABEL / PRODUCTION ECOSYSTEM',
-    note: 'Credited alongside Azadi Records on Nayaab. Independent sound, shared vision.',
+    note: 'Credited alongside Azadi Records on Nayaab.',
     era: 'NAYAAB · 2022',
   },
   {
@@ -32,7 +32,7 @@ export const studios = [
   {
     name: 'DL91 ERA',
     type: 'INDEPENDENT IMPRINT',
-    note: 'Their city. Their frequency. SHAKTI, Kshama and a whole crew on DL91 FM.',
+    note: 'Independent releases include SHAKTI, Kshama and DL91 FM.',
     era: '2024 — ONWARD',
   },
 ];

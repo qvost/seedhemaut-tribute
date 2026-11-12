@@ -24,7 +24,7 @@ const links = [
 const chapters = [
   ['duo', 'THE DUO'],
   ['discography', 'DISCOGRAPHY'],
-  ['studios', 'THE SOUND HOUSES'],
+  ['studios', 'COLLABORATORS'],
   ['world', 'SMX & MAAL'],
 ];
 
@@ -182,9 +182,6 @@ export default function App() {
         <a href="#" className="brand">
           SEEDHE <span>✦</span> MAUT
         </a>
-        <div className="header-center">
-          <i /> INDEPENDENT. UNFILTERED. UNSTOPPABLE.
-        </div>
         <button
           className="menu-button"
           onClick={() => setMenu(!menu)}
@@ -236,16 +233,11 @@ export default function App() {
           />
           <div className="photo-caption">
             <span>CALM × ENCORE ABJ</span>
-            <span>LIVE &amp; LOUD ↗</span>
           </div>
           <span className="photo-index">0{photo + 1} / 03</span>
         </motion.button>
 
         <div className="hero-side">
-          TWO VOICES.
-          <br />
-          ONE MOVEMENT.
-          <br />
           <span>TERA BHAI SEEDHE MAUT.</span>
         </div>
 
@@ -278,17 +270,11 @@ export default function App() {
 
       <div className="ticker">
         <div>
-          FROM DELHI. FOR THE CULTURE. ✳ सीधे मौत ✳ FROM DELHI. FOR THE
-          CULTURE. ✳ सीधे मौत ✳{' '}
+          सीधे मौत ✳ SEEDHE MAUT ✳ सीधे मौत ✳ SEEDHE MAUT ✳{' '}
         </div>
       </div>
 
       <section className="duo section-pad" id="duo">
-        <div className="section-label">
-          <span>01 / THE DUO</span>
-          <span>DIFFERENT WIRES. SAME CURRENT.</span>
-        </div>
-
         <div className="duo-grid">
           {duo.map((member, i) => (
             <article className="duo-column" key={member.name}>
@@ -309,38 +295,22 @@ export default function App() {
                 <h2>{member.name}</h2>
                 <span>{member.real}</span>
                 <div className="bio">
-                  <h3>{member.role}</h3>
                   <p>{member.text}</p>
                 </div>
               </div>
-              <span className="column-number">0{i + 1}</span>
             </article>
           ))}
         </div>
 
         <p className="duo-end">
-          दो नाम। एक आवाज़। <span>TWO NAMES. ONE FREQUENCY.</span>
+          दो नाम। एक आवाज़।
         </p>
       </section>
 
       <section className="archive" id="discography">
         <div className="archive-sticky">
-          <div className="section-label">
-            <span>02 / THE DISCOGRAPHY</span>
-            <span>2017 — 2025 / 08 PROJECTS</span>
-          </div>
-
           <div className="archive-title">
-            <h2>
-              NO SKIPS.
-              <br />
-              <em>ALL SCARS.</em>
-            </h2>
-            <p>
-              Eight chapters. A city’s worth of stories.
-              <br />
-              Select a sleeve. Get inside the sound.
-            </p>
+            <h2>DISCOGRAPHY</h2>
           </div>
 
           <div className="arc">
@@ -409,19 +379,11 @@ export default function App() {
 
       <section className="curtain">
         <span>सीधे मौत</span>
-        <span>BUILT DIFFERENT.</span>
-        <small>THE PEOPLE BEHIND THE FREQUENCY ↓</small>
       </section>
 
       <section className="studios section-pad" id="studios">
-        <div className="section-label">
-          <span>03 / THE SOUND HOUSES</span>
-          <span>NO SOUND EXISTS ALONE.</span>
-        </div>
-
-        {[...studios, engineering].map((studio, i) => (
+        {[...studios, engineering].map((studio) => (
           <article className="studio-row" key={studio.name}>
-            <span className="studio-no">0{i + 1}</span>
             <div>
               <small>{studio.type}</small>
               <h2>{studio.name}</h2>
@@ -433,23 +395,13 @@ export default function App() {
       </section>
 
       <section id="world" className="world section-pad">
-        <div className="section-label">
-          <span>04 / OUTSIDE THE RECORD</span>
-          <span>THE MOVEMENT KEEPS MOVING.</span>
-        </div>
-
         <a
           href="https://www.seedhemaut.com/"
           target="_blank"
           rel="noreferrer"
         >
-          <small>TAKE IT TO THE PIT / SMX WORLD TOUR</small>
-          <h2>
-            SEE YOU
-            <br />
-            IN THE <em>FRONT ROW.</em> ↗
-          </h2>
-          <p>Live dates &amp; tour updates at the official home.</p>
+          <h2>SMX <em>WORLD TOUR</em> ↗</h2>
+          <p>Tour dates &amp; updates</p>
         </a>
 
         <a
@@ -458,7 +410,7 @@ export default function App() {
           rel="noreferrer"
           className="maal"
         >
-          <span>WEAR THE MOVEMENT.</span>
+          <span>MERCH</span>
           <b>MAAL ↗</b>
         </a>
       </section>
@@ -484,7 +436,6 @@ export default function App() {
         <div className="footer-bottom">
           <span>28.6139° N, 77.2090° E · DL91</span>
           <span>INDEPENDENT FAN TRIBUTE / NOT AN OFFICIAL SITE</span>
-          <span>DELHI TO EVERYWHERE. ✳</span>
         </div>
       </footer>
 
@@ -497,19 +448,16 @@ export default function App() {
             animate={{ clipPath: 'inset(0 0 0% 0)' }}
             exit={{ clipPath: 'inset(0 0 100% 0)' }}
           >
-            <small>CHOOSE YOUR FREQUENCY</small>
-            {chapters.map(([id, title], i) => (
+            {chapters.map(([id, title]) => (
               <a
                 key={id}
                 href={`#${id}`}
                 onClick={() => setMenu(false)}
               >
-                <span>0{i + 1} //</span>
                 {title}
                 <b>↗</b>
               </a>
             ))}
-            <span>NEW DELHI / दुनिया तक</span>
           </motion.nav>
         )}
 
